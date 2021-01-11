@@ -2,8 +2,7 @@ import pandas as pd
 import datetime as dt
 import plotly.graph_objs as go
 
-# Use this file to read in your data and prepare the plotly visualizations. The path to the data files are in
-# `data/file_name.csv`
+# Read in data, wrangle it and prepare the plotly visualizations.
 
 df_price = pd.read_csv('data/market-price')
 df_amount = pd.read_csv('data/total-bitcoins')
@@ -20,7 +19,7 @@ def return_figures():
 
     """
 
-    # first chart plots arable land from 1990 to 2015 in top 10 economies 
+    # first chart to plot the bitcoin price
     # as a line chart
     
     graph_one = [] 
@@ -44,7 +43,7 @@ def return_figures():
                 yaxis = dict(title = 'price [$]')
                 )
 
-# second chart plots ararble land for 2015 as a bar chart    
+# second chart to plot the bitcoin price on a logarithmic scale  
     graph_two = []
 
     x = []
@@ -66,7 +65,7 @@ def return_figures():
                 yaxis = dict(title = 'price [$]', type= 'log'),
                 )
     
-# third chart plots percent of population that is rural from 1990 to 2015
+# third chart plots the total mined bitcoins
     graph_three = []
     x = []
     y = df_amount['total-bitcoins']
@@ -87,7 +86,7 @@ def return_figures():
                 yaxis = dict(title = 'Total amount of bitcoins mined')
                        )
     
-# fourth chart shows rural population vs arable land
+# fourth chart shows the market capitalization of bitcoin and other crypto currencies
     graph_four = []
     
     x = df_allcc['name'][:10]
