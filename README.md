@@ -9,7 +9,6 @@
 5. [Acknowledgements](#licensing)
 
 ## Installation <a name="installation"></a>
-
 The code should run in Python 3 with no problems. No additional packages are needed. 
 
 Follwoing libraries are being used:
@@ -19,7 +18,6 @@ Follwoing libraries are being used:
  - gunicorn
  
 ## Project Motivation<a name="motivation"></a>
-
 The goal of this project was to build a webapplication to present data and graphs.
 
 The analysed data contain information about the bitcoin and other crypto currencies. The data are presented on 
@@ -39,11 +37,11 @@ The data for the figures are prepared in the "wrangle_data.py" file.
 #### requirements
 The file "requirements.txt" is needed for the upload to the Heroku webpage to build the webapp. 
 
-The steps of the analysis can be viewed in the Crisp_DM_history.ipynb file. There is also a single jupyter file for each question to generate the desired plots.
-
 ## Results<a name="results"></a>
 The results can be viewed on https://webapprico.herokuapp.com/
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
-
-You can find the Licensing for the data and other descriptive information at the Kaggle link available [here](https://www.kaggle.com/airbnb/seattle/data). You can also use the code here and run the model by yourself. Maybe you even have an idea for adjustments or improvements. 
+The origin of the data are:
+www.nomics.com
+www.kaggle.com
+Maybe you even have an idea for adjustments or improvements. 
